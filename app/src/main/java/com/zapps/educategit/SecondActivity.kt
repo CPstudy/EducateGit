@@ -14,6 +14,9 @@ class SecondActivity : AppCompatActivity() {
         setContentView(R.layout.activity_second)
 
         imageView.setOnClickListener(::onImageViewClick)
+        button2.setOnClickListener{
+            finish()
+        }
     }
 
     fun onImageViewClick(view: View) {
